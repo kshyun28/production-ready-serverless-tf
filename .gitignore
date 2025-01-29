@@ -25,3 +25,9 @@ terraform.rc
 
 # Terraform builds
 terraform/builds/*
+
+# JavaScript local files
+**/node_modules/*
+
+# Environment variables file
+.env

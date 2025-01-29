@@ -1,0 +1,25 @@
+{
+  "name": "production-ready-serverless-tf",
+  "version": "1.0.0",
+  "description": "## Terraform Commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshyun28/production-ready-serverless-tf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kshyun28/production-ready-serverless-tf/issues"
+  },
+  "homepage": "https://github.com/kshyun28/production-ready-serverless-tf#readme",
+  "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.734.0",
+    "@aws-sdk/lib-dynamodb": "^3.734.0",
+    "dotenv": "^16.4.7"
+  }
+}
