@@ -7,10 +7,16 @@ module "get_index_lambda" {
   runtime       = "nodejs20.x"
 
   source_path = [{
-    path = "${path.module}/../functions/get-index"
+    path = "${path.module}/../functions/get-index",
+    commands = [
+      "rm -rf node_modules",
+      "npm ci --omit=dev",
+      ":zip"
+    ]
   }]
 
   environment_variables = {
+    restaurants_api = "https://${aws_api_gateway_rest_api.main.id}.execute-api.${var.aws_region}.amazonaws.com/${var.stage_name}/restaurants"
   }
 
   publish = true
